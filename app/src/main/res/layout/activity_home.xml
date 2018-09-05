@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ray.lostandfound.Activity_Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/grey"
+        android:orientation="vertical">
+        <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/logo_image"
+            android:layout_width="325dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+
+            android:padding="24dp"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/logo_edit_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="145dp"
+            android:onClick="showImage"
+            android:padding="10dp"
+            android:src="@drawable/ic_photo_camera_black_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Item title :"
+            android:textColor="@color/greenish"
+            android:textStyle="bold"
+            android:layout_marginTop="155dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/input_txttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="170dp"
+            android:textAlignment="textStart"
+            android:textColorHint="@color/white"
+            android:padding="8dp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Found by :"
+            android:textColor="@color/greenish"
+            android:textStyle="bold"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="220dp"
+            android:textAlignment="textStart"
+            android:textColorHint="@color/greenish"
+            android:padding="8dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Where found :"
+            android:textColor="@color/greenish"
+            android:textStyle="bold"
+            android:layout_marginTop="255dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/input_wherefound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="270dp"
+            android:textAlignment="textStart"
+            android:textColorHint="@color/greenish"
+            android:padding="8dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Date reported :"
+            android:textColor="@color/greenish"
+            android:textStyle="bold"
+            android:layout_marginTop="305dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/input_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="320dp"
+            android:textAlignment="textStart"
+            android:textColorHint="@color/greenish"
+            android:padding="8dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Description :"
+            android:textColor="@color/greenish"
+            android:textStyle="bold"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_description"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/rounded"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="382dp"
+            android:textAlignment="textStart"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="445dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rounded2"
+            android:onClick="Next"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:text="Submit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="445dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/rounded2"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:text="Clear"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

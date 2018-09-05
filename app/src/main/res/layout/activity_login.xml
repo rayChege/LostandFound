@@ -116,16 +116,28 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <TextView android:id="@+id/linktxtregister"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="24dp"
-                    android:text="No account yet? Create one"
+                    android:text="No account yet?"
                     android:gravity="center"
                     android:textStyle="italic"
                     android:textColor="@color/colorPrimary"
+                    android:onClick="Next"
+                    android:textSize="16dip"/>
+
+                <TextView android:id="@+id/linkcreate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:text="Create one"
+                    android:gravity="center"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/greenish"
                     android:onClick="Next"
                     android:textSize="16dip"/>
             </LinearLayout>

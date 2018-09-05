@@ -24,6 +24,7 @@
         <activity android:name="com.example.ray.lostandfound.Activity_Home" />
         <activity android:name="com.example.ray.lostandfound.SignupActivity" />
         <activity android:name="com.example.ray.lostandfound.Activity_Details" />
+        <activity android:name=".view"></activity>
     </application>
 
 </manifest>

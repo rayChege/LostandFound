@@ -21,7 +21,7 @@
             android:src="@drawable/logo" />
 
         <ImageView
-            android:id="@+id/logo_edit_image"
+            android:id="@+id/logo_item_image"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_gravity="end"

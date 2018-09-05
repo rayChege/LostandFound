@@ -142,25 +142,30 @@ public class Activity_Home extends AppCompatActivity implements PopupMenu.OnMenu
         return encImage;
     }
 
-
     public void Next(View v){
 
         Intent submit=new Intent(Activity_Home.this,Activity_Details.class);
+
         obj_logo=findViewById(R.id.logo_image);
-        obj_item=findViewById(R.id.logo_edit_image);
+        obj_item=findViewById(R.id.logo_item_image);
         obj_title=findViewById(R.id.input_txttitle);
         obj_name=findViewById(R.id.input_name);
         obj_wherefound=findViewById(R.id.input_wherefound);
         obj_date=findViewById(R.id.input_date);
         obj_description=findViewById(R.id.input_description);
 
+        ByteArrayOutputStream _bs = new ByteArrayOutputStream();
+        obj_logo.compress(Bitmap.CompressFormat.PNG, 50, _bs);
+        obj_item.compress(Bitmap.CompressFormat.PNG, 50, _bs);
+        submit.putExtra("byteArray", _bs.toByteArray());
+
         /*conversion of image to bitmap*/
        /* Bitmap logo_image = ((BitmapDrawable) obj_logo.getDrawable()).getBitmap();
-        Bitmap item_image = ((BitmapDrawable) obj_item.getDrawable()).getBitmap();
+        Bitmap logo_item_image = ((BitmapDrawable) obj_item.getDrawable()).getBitmap();
 */
        /* submit.putExtra("logoimage", logo_image);
-        submit.putExtra("editimage",item_image);
-      */  submit.putExtra("title", obj_title.getText().toString());
+        submit.putExtra("itemimage",item_image);
+      */submit.putExtra("title", obj_title.getText().toString());
         submit.putExtra("name",obj_name.getText().toString());
         submit.putExtra("wherefound", obj_wherefound.getText().toString());
         submit.putExtra("date",obj_date.getText().toString());
